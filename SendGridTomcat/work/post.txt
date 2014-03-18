@@ -1,0 +1,81 @@
+--xYzZY
+Content-Disposition: form-data; name="headers"
+
+Received: by mx-004.sjc1.sendgrid.net with SMTP id XPPXs90Cen Tue, 18 Mar 2014 14:15:48 +0000 (GMT)
+Received: from mail-qc0-f182.google.com (mail-qc0-f182.google.com [209.85.216.182]) by mx-004.sjc1.sendgrid.net (Postfix) with ESMTPS id 31E9E1041A18 for <inbound@awwa500.bymail.in>; Tue, 18 Mar 2014 14:15:48 +0000 (GMT)
+Received: by mail-qc0-f182.google.com with SMTP id e16so7677416qcx.41 for <inbound@awwa500.bymail.in>; Tue, 18 Mar 2014 07:15:47 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113; h=mime-version:date:message-id:subject:from:to:content-type; bh=50k+38kK5uY0wOfyP7BASSjJvqiLNKkn4Mtp3Xo/cbU=; b=b5Bk1Z0eifOnDKPX1Vm5VW57DoC+BYUx3wZ8gTUjlesleDL6eG/uVdLSRech9L5+Of 0Jc4nLV6sSdTQnz+h+FiPIE6GM22iWZDcwhr7T5Vp1uJK89Hqr5HHO5lk1UgF2RddoF0 /mdx2ZaxSIv7/wBOrI00go2aDQiccJ0i0jf4hRFH0rQ/c/eaTndP1J3muOetUA7ani2R YhA6xm9VtpUIvLY/0QyM90BLtTtBZkyAiLypnoZ7IlwruSoSVoQS6dJxxnw38+2wpqZs uQpPyKDOeDmWadaJjp3AEFwf9I2TmFG12K1Oi0MJvy8q/9+PaaM4gBq0TUFBsLEXvpk+ ONtg==
+MIME-Version: 1.0
+X-Received: by 10.224.167.12 with SMTP id o12mr11302161qay.77.1395152147431; Tue, 18 Mar 2014 07:15:47 -0700 (PDT)
+Received: by 10.140.19.109 with HTTP; Tue, 18 Mar 2014 07:15:47 -0700 (PDT)
+Date: Tue, 18 Mar 2014 23:15:47 +0900
+Message-ID: <CAMwLFC1ac-cjms7yR62mMG9GnGBK+mE+5jzY8mne0171c9pg4Q@mail.gmail.com>
+Subject: this is subject
+From: awwa <awwa500@gmail.com>
+To: inbound@awwa500.bymail.in
+Content-Type: multipart/mixed; boundary=089e015375a0291c1e04f4e22cfe
+
+--xYzZY
+Content-Disposition: form-data; name="dkim"
+
+{@gmail.com : fail (body has been altered)}
+--xYzZY
+Content-Disposition: form-data; name="to"
+
+inbound@awwa500.bymail.in
+--xYzZY
+Content-Disposition: form-data; name="html"
+
+<div dir="ltr">this is body<br clear="all"><div><br></div>-- <br>awwa &lt;<a href="mailto:awwa500@gmail.com" target="_blank">awwa500@gmail.com</a>&gt;<br>Twitter?<a href="http://twitter.com/awwa500" target="_blank">http://twitter.com/awwa500</a><br>
+Blog?<a href="http://awwa500.blogspot.com/" target="_blank">http://awwa500.blogspot.com/</a><br>
+</div>
+
+--xYzZY
+Content-Disposition: form-data; name="from"
+
+awwa <awwa500@gmail.com>
+--xYzZY
+Content-Disposition: form-data; name="text"
+
+this is body
+
+-- 
+awwa <awwa500@gmail.com>
+Twitter http://twitter.com/awwa500
+Blog http://awwa500.blogspot.com/
+
+--xYzZY
+Content-Disposition: form-data; name="sender_ip"
+
+209.85.216.182
+--xYzZY
+Content-Disposition: form-data; name="attachment1"; filename="a.txt"
+Content-Type: text/plain
+
+This is file content.
+--xYzZY
+Content-Disposition: form-data; name="envelope"
+
+{"to":["inbound@awwa500.bymail.in"],"from":"awwa500@gmail.com"}
+--xYzZY
+Content-Disposition: form-data; name="attachments"
+
+1
+--xYzZY
+Content-Disposition: form-data; name="subject"
+
+this is subject
+--xYzZY
+Content-Disposition: form-data; name="attachment-info"
+
+{"attachment1":{"filename":"a.txt","name":"a.txt","charset":"US-ASCII","type":"text/plain"}}
+--xYzZY
+Content-Disposition: form-data; name="charsets"
+
+{"to":"UTF-8","html":"ISO-8859-1","subject":"UTF-8","from":"UTF-8","text":"ISO-8859-1"}
+--xYzZY
+Content-Disposition: form-data; name="SPF"
+
+pass
+--xYzZY--
+

@@ -14,6 +14,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.Part;
 
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
@@ -27,6 +28,9 @@ public class SendGridTomcat extends HttpServlet {
             File file = new File("/var/tmp/log.txt");
             FileWriter fw = new FileWriter(file, true);
             BufferedWriter bw = new BufferedWriter(fw);
+            System.out.println("doPost()");
+            System.out.println(inputStreemToString(request.getInputStream(), "UTF-8"));
+                
             pw = new PrintWriter(bw);
             pw.println("---- start parse");
         
@@ -77,11 +81,11 @@ public class SendGridTomcat extends HttpServlet {
           PrintWriter out = response.getWriter();
           out.println("<html>");
           out.println("<head>");
-          out.println("<title>Get Interface Hello World!</title>");
+          out.println("<title>POST receiver</title>");
           out.println("</head>");
           out.println("<body>");
-          out.println("<h1>Get Interface Hello World!</h1>");
-          out.println("</body>");
+          out.println("<h1>I'm a POST receiver.</h1>");
+          out.println("<body>Now I will receive POST from SendGrid Parse API.</body>");
           out.println("</html>");
     }
 }
